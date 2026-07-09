@@ -1,0 +1,81 @@
+//FIND THE GREATEST OF THREE NUMBERS 
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, greatest;
+
+    printf("Enter the three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    greatest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+    printf("Greatest number = %d\n", greatest);
+
+    return 0;
+}
+0/P:
+Enter the three numbers: 8 0 9
+Greatest number = 9
+----------------------------------------------
+//Check whether a given number is a three-digit number using the if-else statement
+#include <stdio.h>
+
+int main()
+{
+    int a;
+
+    printf("Enter the number: ");
+    scanf("%d", &a);
+
+    if ((a >= 100 && a <= 999) || (a <= -100 && a >= -999))
+    {
+        printf("It is a three-digit number.\n");
+    }
+    else
+    {
+        printf("It is not a three-digit number.\n");
+    }
+
+    return 0;
+}
+
+O/P:
+Enter the number: 89
+It is not a three-digit number.
+
+-----------------------------------------------------
+
+//check whether a given number is positive, negative, or zero
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+
+    printf("Enter the number: ");
+    scanf("%d", &a);
+
+    if (a > 0)
+    {
+        printf("Positive\n");
+    }
+    else if (a < 0)
+    {
+        printf("Negative\n");
+    }
+    else
+    {
+        printf("Zero\n");
+    }
+
+    return 0;
+}
+o/p:
+Enter the number: 6
+Positive
+------------------------------------
+
+//
+
